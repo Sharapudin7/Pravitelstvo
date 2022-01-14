@@ -1,0 +1,117 @@
+.list {
+    min-height: 200px;
+    padding: 20px 0;
+}
+
+.list__top-buttons {
+    display: grid;
+    gap: 10px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(0, max-content));
+    justify-content: flex-end;
+    margin: 0 0 20px 0;
+}
+
+.list__item {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+.list__item .list__photo{
+max-width: 120px;
+}
+.list__item--main .list__photo{
+max-width: 100%;
+}
+.list__item--main {
+    grid-template-columns: 1fr 1fr;
+}
+
+.list__item--no-photo {
+    grid-template-columns: 100%;
+}
+
+.list__photo:hover {
+    border: none;
+}
+
+.list__photo-image {
+    border-radius: 4px;
+    width: 100%;
+}
+
+.list__head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list__head>* {
+    margin-bottom: 12px;
+}
+
+:root.root--special .list__item {
+    border-color: var(--special-text-color);
+}
+
+@media (hover: hover) {
+    .list__title>a:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--primary-color-25);
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .list__item {
+        grid-template-columns: 100%;
+    }
+    .list__photo-image {
+        width: 100%;
+    }
+}
+
+
+/* Meta info */
+
+.meta {
+    font-size: calc(14rem/var(--initial-font-multiplier));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    line-height: 1.7em;
+}
+
+.meta__item {
+    display: inline;
+    color: var(--text-color-light-gray);
+    margin-right: calc(var(--grid-gap) / 2);
+}
+
+.meta__item>* {
+    display: inline;
+}
+
+.meta__item>*+* {
+    margin-left: 5px;
+}
+
+.meta__item>*:last-child {
+    color: var(--primary-color);
+}
+
+.meta__icon {
+    vertical-align: middle;
+}
+h3 a {
+    color: #000;
+    font-weight: 400;
+    line-height: 22px;
+}
+h3 {
+    font-size: calc(18rem/var(--initial-font-multiplier));
+    font-weight: normal;
+}
+.list__detail .list__title{
+    max-width: 900px;
+}

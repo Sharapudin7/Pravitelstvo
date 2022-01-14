@@ -1,0 +1,34 @@
+
+
+		.rating-vote-result {
+			padding: 0 5px 0 5px;
+		}
+
+		.rating-vote {
+			display: flex;
+			align-items: center;
+			padding-left: 15px;
+		}
+
+		.rating-vote .rating-vote-plus,
+		.rating-vote .rating-vote-minus {
+			margin: 0;
+			padding: 0;
+			background: none;
+			border: none;
+			color: var(--text-color-light-gray);
+			cursor: pointer;
+		}
+
+		.rating-vote .rating-vote-plus[disabled] {
+			cursor: default;
+			color: var(--text-color-light-gray);
+			opacity: .7
+		}
+
+
+		.rating-vote .rating-vote-plus:hover,
+		.rating-vote .rating-vote-minus:hover {
+			color: #004ca8;
+		}
+	

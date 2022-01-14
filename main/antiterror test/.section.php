@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Антитеррор";
+$arDirProperties = Array(
+
+);
+?>

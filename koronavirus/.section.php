@@ -1,0 +1,6 @@
+<?
+$sSectionName = "коронавирус";
+$arDirProperties = Array(
+
+);
+?>

@@ -1,0 +1,3 @@
+<?
+$sSectionName = "Приемная";
+$arDirProperties = array();

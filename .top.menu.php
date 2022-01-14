@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Главная", 
+		"/main/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Руководство", 
+		"/administration/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Администрация", 
+		"/government/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Новости", 
+		"/news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Обращения граждан", 
+		"/public/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"О республике", 
+		"/about/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

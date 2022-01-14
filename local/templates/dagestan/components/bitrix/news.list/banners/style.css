@@ -1,0 +1,130 @@
+.sitemap li {
+    padding: 7px 0 !important;
+}
+
+.footer .sitemap__root-item a {
+	font-weight: bold !Important;
+}
+
+.banners {
+    padding: 60px 0 80px;
+    background: #F3F3F3;
+}
+
+.banners__items-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.banners__items {
+    display: grid;
+    gap: var(--grid-gap);
+    transition: transform 0.25s ease-out;
+    grid-template-columns: repeat(10000, calc((100% - 2 * var(--grid-gap)) / 3));
+}
+
+.banners__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    position: relative;
+    margin: 0 5px;
+}
+
+.banners__link .banners__image {
+    height: 40px;
+    width: auto!important;
+}
+
+.banners__item-title-block {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.banners__item-title-block strong {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.banners__item-title-block span {
+    font-size: 14px;
+    opacity: .5;
+}
+
+.banners__wrapper {
+    width: 100%;
+}
+
+.banners__footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    padding-top: 35px;
+}
+
+.banners__button img {
+    width: 15px;
+    height: 15px;
+    margin-right: 9px;
+}
+
+.banners__button {
+    height: 40px !important;
+    padding: 0 20px !important;
+    border: 1px solid #1d66bf40;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-out, color 0.15s ease-out, border-color 0.15s ease-out;
+    height: 32px;
+    padding: 0 12px;
+    text-decoration: none;
+    background: #fff;
+    color: #1d66bf;
+    background-position: center;
+    white-space: nowrap;
+    font-family: 'Open Sans';
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+.banners__button_hide {
+    display: none;
+}
+
+.banners__nav-buttons {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banners__nav-button {
+    width: 39px;
+    height: 39px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid hsl(0deg 0% 73%);
+    color: hsl(0deg 0% 73%);
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.15s ease-out, color 0.15s ease-out, border-color 0.15s ease-out;
+}
+
+.banners__nav-button:hover {
+    background: hsl(223deg 84% 15%);
+}
+
+@media (max-width: 991px) {
+    .banners {
+        display: none;
+    }
+}

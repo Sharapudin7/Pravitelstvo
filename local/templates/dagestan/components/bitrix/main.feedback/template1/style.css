@@ -1,0 +1,33 @@
+.mfeedback {
+    max-width: 600px;
+    margin: 30px auto;
+    background: var(--light-gray-color);
+    border-radius: 4px;
+    padding: 30px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.form-field {
+    margin-bottom: 20px;
+}
+.form-field input[type="text"],
+.form-field textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 20px!important;
+}
+.form-field input[type="text"] {
+    height: 50px!important;
+}
+.mfeedback input[type="submit"] {
+    display: flex;
+    margin: auto;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    background: #123179;
+    color: #fff;
+    cursor: pointer;
+}

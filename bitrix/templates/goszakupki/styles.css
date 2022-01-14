@@ -1,0 +1,111 @@
+:root {
+    --initial-font-multiplier: 18;
+    --initial-font-unit: 1px;
+    font-size: calc(var(--initial-font-multiplier) * var(--initial-font-unit));
+    --text-color: hsl(0, 0%, 20%);
+    --text-color-gray: hsl(240, 9%, 45%);
+    --text-color-light-gray: hsl(240, 2%, 66%);
+    --disabled-color: var(--text-color-light-gray);
+    --hint-color: hsl(240, 2%, 47%);
+    --disabled-color-light: hsl(0, 0%, 97%);
+    --border-color: hsl(240, 7%, 86%);
+    --border-color-light: hsl(240, 13%, 91%);
+    --error-color: hsl(0, 78%, 47%);
+    --error-color-light: hsla(0, 78%, 47%, 0.1);
+    --warning-color: hsl(35, 100%, 50%);
+    --light-gray-color: hsl(240, 11%, 96%);
+    --light-color: hsl(0, 0%, 100%);
+    --grid-gap: 32px;
+    --primary-color: hsl(213, 74%, 43%);
+    --primary-color-dark: hsl(223, 78%, 27%);
+    --primary-color-extra-dark: hsl(223, 84%, 15%);
+    --primary-color-extra-dark-50: hsla(223, 84%, 15%, 0.500000);
+    --primary-color-light: hsl(213, 100%, 96%);
+    --primary-color-light-75: hsla(213, 100%, 96%, 0.750000);
+    --primary-color-hover: hsl(213, 100%, 33%);
+    --primary-color-25: hsla(213, 74%, 43%, 0.250000);
+    --primary-color-15: hsla(213, 74%, 43%, 0.150000);
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* transition: 0.5s ease-in-out; */
+    /* добавим плавность переходов для всех элементов страницы*/
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: var(--primary-color);
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: hsl(0, 0%, 0%);
+}
+
+body {
+    font-family: "Open Sans", arial, sans-serif;
+    font-size: 10px;
+    line-height: 1;
+    color: #68687d;
+    background-color: #ffffff;
+}
+
+input {
+    outline: none;
+}
+
+a:hover,
+.link-button:hover {
+    text-decoration: none;
+    color: var(--primary-color-hover);
+}
+
+
+/* стилевой класс, который управляет шириной контейнера сетки*/
+
+.container {
+    width: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding-left: calc(var(--grid-gap) / 2);
+    padding-right: calc(var(--grid-gap) / 2);
+}
+
+.current-date {
+    font-size: 1.4em;
+}

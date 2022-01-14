@@ -1,0 +1,37 @@
+.filter {
+    margin: 20px 0;
+}
+
+.filter__title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #011545;
+    text-transform: uppercase;
+}
+
+.filter__button-container {
+    margin: 20px 0;
+}
+
+.filter__select {
+    margin: 20px 0;
+}
+
+.filter__select select {
+    border-color: #a7a7aa;
+    height: 34px;
+    border-radius: 5px;
+    color: #4a4a4c;
+    font-size: 16px;
+}
+
+.filter__button {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    background: #123179;
+    color: #fff;
+    cursor: pointer;
+}

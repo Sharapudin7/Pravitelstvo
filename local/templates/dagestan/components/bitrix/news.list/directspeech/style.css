@@ -1,0 +1,187 @@
+/* Start:/local/templates/g2/components/openregion/mainpage/.default/openregion/component/speech-attention-vote-block/style.css?16164109941018*/
+.speech-attention-vote-block {
+  position: relative;
+}
+
+.speech-attention-vote-block > .container {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.speech-attention-vote-block > .decoration + .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.speech-attention-vote-block__body {
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-columns: 1fr 1fr;
+}
+
+.speech-attention-vote-block__body > section {
+  transition: background-color 0.25s ease-out;
+}
+
+.speech-attention-vote-block section.speech + section.vote,
+.speech-attention-vote-block section.attention:last-child,
+.speech-attention-vote-block section.vote:first-child {
+  grid-column: 1 / -1;
+}
+
+:root.root--special .speech-attention-vote-block {
+  background-color: var(--special-background-color);
+}
+
+@media screen and (max-width: 735px) {
+  .speech-attention-vote-block__body {
+    gap: calc(var(--grid-gap) / 2);
+    grid-template-columns: 1fr;
+    padding-top: var(--grid-gap);
+    padding-bottom: var(--grid-gap);
+  }
+}
+
+.decoration__color {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+.speech:hover {
+    background-color: #0e2e7a !important;
+}
+
+/* End */
+/* Start:/local/templates/g2/components/openregion/mainpage/.default/openregion/news.list/speech/style.css?16164109952566*/
+.speech {
+  display: grid;
+  gap: var(--grid-gap);
+  padding: var(--grid-gap);
+  border: 1px solid var(--primary-color-15);
+  border-radius: 4px;
+  grid-template-columns: min-content 1fr;
+  background: #f5f6fb;
+  grid-column: 1 / -1;
+}
+
+.speech__photo {
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px var(--primary-color-light);
+	max-width: 122px;
+	max-height: 122px;
+	width: 122px;
+	height: 100%;
+    object-fit: cover;
+}
+
+.speech__detail {
+  display: grid;
+  gap: 20px;
+}
+
+.speech__title {
+  font-size: calc(30rem/var(--initial-font-multiplier));
+  font-weight: bold;
+}
+
+.speech__quote {
+  font-size: calc(18rem/var(--initial-font-multiplier));
+}
+
+.speech__footer {
+  display: grid;
+  gap: 12px var(--grid-gap);
+  grid-template-columns: 1fr min-content;
+  border-top: 1px solid var(--primary-color-15);
+  padding-top: 20px;
+}
+
+.speech__sign {
+  font-size: calc(14rem/var(--initial-font-multiplier));
+  color: hsl(240, 9%, 45%);
+}
+
+.speech__more {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 10px;
+  font-size: calc(16rem/var(--initial-font-multiplier));
+  align-items: center;
+  line-height: 1;
+  height: 32px;
+  border-radius: 4px;
+  padding: 0 12px;
+  margin: 0 -12px;
+  transition:
+    background-color 0.15s ease-out,
+    color 0.15s ease-out,
+    border-color 0.15s ease-out;
+}
+
+:root.root--special .speech {
+  background-color: var(--special-background-color);
+  color: var(--special-text-color);
+  border-color: var(--special-text-color);
+}
+
+:root.root--special .speech__title,
+:root.root--special .speech__sign {
+  color: var(--special-text-color);
+}
+
+:root.root--special .speech__footer {
+  border-color: var(--special-text-color);
+}
+
+:root.root--special .speech__photo {
+  box-shadow: none;
+}
+
+@media (hover: hover) {
+  .speech:hover {
+    background: var(--primary-color);
+  }
+
+  .speech:hover .speech__title,
+  .speech:hover .speech__quote,
+  .speech:hover .speech__more {
+    color: hsl(0, 0%, 100%);
+  }
+
+  .speech:hover .speech__footer {
+    border-top-color: hsla(0, 0%, 100%, 0.1);
+  }
+
+  .speech:hover .speech__sign {
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  .speech:hover .speech__more:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: var(--primary-color);
+  }
+
+  :root.root--special .speech:hover *,
+  :root.root--special .speech:hover *:hover {
+    background-color: var(--special-background-color);
+    color: var(--special-text-color);
+    border-color: var(--special-text-color);
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .speech {
+    grid-template-columns: 1fr;
+    padding: calc(var(--grid-gap) / 2);
+  }
+
+  .speech__footer {
+    grid-template-columns: 1fr;
+  }
+}
+/* End */

@@ -1,0 +1,128 @@
+.search__form {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr max-content;
+    margin: var(--grid-gap) 0;
+}
+
+.search__query {
+    height: 48px !important;
+    font-size: calc(18rem/var(--initial-font-multiplier)) !important;
+    padding: 0 20px !important;
+}
+
+.search__item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+    display: grid;
+    gap: 10px;
+}
+
+.search__source {
+    font-size: calc(14rem/var(--initial-font-multiplier));
+    color: var(--text-color-light-gray);
+}
+
+:root.root--special .search__item {
+    border-color: var(--special-text-color);
+}
+
+:root.root--special .search__source {
+    color: var(--special-text-color);
+}
+
+
+/* buttons  */
+
+.button {
+    border: 1px solid var(--primary-color-25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-out, color 0.15s ease-out, border-color 0.15s ease-out;
+    height: 32px;
+    padding: 0 12px;
+    font-size: calc(14rem/var(--initial-font-multiplier));
+    text-decoration: none;
+    background: hsl(0, 0%, 100%);
+    color: var(--primary-color);
+    background-position: center;
+    white-space: nowrap;
+}
+
+.button--big {
+    height: 48px !important;
+    padding: 0 22px !important;
+    font-size: calc(18rem/var(--initial-font-multiplier)) !important;
+}
+
+.button--primary {
+    background: var(--primary-color);
+    color: hsl(0, 0%, 100%);
+}
+
+.button--add {
+    border: 2px solid hsl(158, 53%, 47%);
+    color: hsl(158, 53%, 47%);
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 0;
+}
+
+.button--old-log {
+    border: 2px solid hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 0;
+}
+
+.button--plain {
+    border: none;
+    padding: 0;
+    color: hsl(240, 9%, 45%);
+}
+
+.button--underline {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.button:active {
+    background: var(--primary-color-dark);
+}
+
+.button[disabled],
+.button[disabled]:hover {
+    background: var(--disabled-color-light);
+    border-color: var(--disabled-color);
+    color: var(--disabled-color);
+    cursor: default;
+}
+
+.button--primary[disabled],
+.button--primary[disabled]:hover {
+    background: var(--disabled-color);
+    border-color: var(--disabled-color);
+    color: hsl(0, 0%, 100%);
+    cursor: default;
+}
+
+.button__icon {
+    margin-right: 14px;
+}
+
+.link-button {
+    display: inline;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+}
