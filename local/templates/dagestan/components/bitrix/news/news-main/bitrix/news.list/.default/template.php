@@ -103,18 +103,14 @@ $sliceNewsColumn = array_slice($arResult['ITEMS'], 3);
 					</a>
 				</div>
 			</section>
-
 		</div>
 	</div>
 	<? if ($arParams["DISPLAY_BOTTOM_PAGER"]) : ?>
 		<?= $arResult["NAV_STRING"] ?>
 	<? endif; ?>
 </section>
-
-
 <script>
 	$(document).ready(function() {
-
 		var owl = $('.main-slider').owlCarousel({
 			items: 1,
 			margin: 10,

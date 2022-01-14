@@ -26,7 +26,6 @@ $this->setFrameMode(true);
 	<div class="new__news-title" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
 		<?if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
 			<div class="new__news-date"><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></div>
-			
 		<?endif?>
         </div>
 		<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
@@ -34,13 +33,11 @@ $this->setFrameMode(true);
                 <div class="new__news-title">
 				<a href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><?echo $arItem["NAME"]?></a><br />
 			<?else:?>
-				
 			<?endif;?>
             </div>
 		<?endif;?>
         </div>
-            
-            </div>
+    </div>
 <?endforeach;?>
 <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
 	<br /><?=$arResult["NAV_STRING"]?>
