@@ -27,7 +27,6 @@ $sliceNewsColumn = array_slice($arResult['ITEMS'], 3);
 	<div class="container">
 		<div class="news-events-block__body news-events-block__body--no-events">
 			<section class="news-slider">
-
 				<h2 class="news-slider__title">Новости</h2>
 				<div class="news-slider__wrapper">
 					<div class="news-slider__items owl-carousel main-slider">

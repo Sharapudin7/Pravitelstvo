@@ -1302,6 +1302,11 @@ input::placeholder {
 }
 .new__news-date {
     margin-right: 19px;
+      font-weight: normal;
+    font-size: 21px;
+    line-height: 25px;
+    color: #2B3858;
+    width: 157px;
 }
 .new__news-title a{
     font-family: DIN Pro;
@@ -1380,4 +1385,8 @@ input::placeholder {
     .new__news-date h3, .actual__news-date h3 {
         font-size: 16px;
     }
+}
+
+.news__photo {
+    height: 450px;
 }
