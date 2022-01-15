@@ -19,9 +19,18 @@ while ($ob = $dates->GetNextElement()) {
     $arFields["PROPERTIES"] = $ob->GetProperties();
     $dateList=$arFields["PROPERTIES"]['EVENTS']["VALUE"];
 }
+?>
 
+
+<?
 foreach ($dateList as $item){?>
 
-    <span style="font-weight: bold"><?=$item?></span><br>
-
+    <div class="body__title"> <?=$item?></div>
+    <!-- <span style="font-weight: bold"></span><br> -->
 <?php } ?>
+<script>
+    $('.desc-events').addClass('show')
+    $('.close').click(() => {
+        $('.desc-events').removeClass('show')
+    })
+</script>

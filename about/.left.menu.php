@@ -8,7 +8,7 @@ $aMenuLinks = array(
         ""
     ),
     array(
-        "Историчсекая справка",
+        "Историческая справка",
         "/about/istoricheskaya-spravka/",
         array(),
         array(),
@@ -42,19 +42,19 @@ $aMenuLinks = array(
         array(),
         ""
     ),
-    array(
-        "Муниципальные образования",
-        "/about/munitsipalnye-obrazovaniya/",
-        array(),
-        array(),
-        ""
-    ),
-    array(
-        "Власть",
-        "/about/vlast/",
-        array(),
-        array(),
-        ""
-    ),
+    // array(
+    //     "Муниципальные образования",
+    //     "/about/munitsipalnye-obrazovaniya/",
+    //     array(),
+    //     array(),
+    //     ""
+    // ),
+    // array(
+    //     "Власть",
+    //     "/about/vlast/",
+    //     array(),
+    //     array(),
+    //     ""
+    // ),
 
 );
